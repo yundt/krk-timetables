@@ -22,4 +22,30 @@ describe KrkTimetables::Stop do
 
   end
 
+  describe "#lines" do
+
+    before(:each) do
+      @stop = KrkTimetables::Stop.find_by_name("Cracovia")
+      @lines = @stop.lines
+    end
+
+    it "is an Array" do
+      @lines.should be_a(Array)
+    end
+
+    it "is not empty" do
+      @lines.should_not be_empty
+    end
+
+    it "should contain lines" do
+      @lines.first.should be_a(KrkTimetables::Line)
+      @lines.last.should be_a(KrkTimetables::Line)
+    end
+
+    it "should contain a 164 line" do
+      @lines.select { |line| line.number == 164 }.should_not be_empty
+    end
+
+  end
+
 end
