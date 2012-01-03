@@ -1,9 +1,9 @@
 class KrkTimetables::Line
 
-  attr_reader :number
+  attr_reader :number, :destination
 
-  def initialize(number)
-    @number = number
+  def initialize(number, destination)
+    @number, @destination = number, destination
   end
 
 end

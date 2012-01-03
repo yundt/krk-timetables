@@ -3,9 +3,7 @@ class KrkTimetables::Stop
   attr_reader :name
 
   def initialize(name, url)
-    @name = name
-    @lines = []
-    @url = url
+    @name, @lines, @url = name, [], url
   end
 
   def self.find_by_name(name)
@@ -22,7 +20,9 @@ class KrkTimetables::Stop
       next unless line_link_data.size == 2
 
       number = line_link_data.first.to_i
-      @lines << KrkTimetables::Line.new(number)
+      destination = line_link_data.last
+
+      @lines << KrkTimetables::Line.new(number, destination)
     end
 
     @lines
