@@ -5,7 +5,7 @@ class KrkTimetables::Departure
   end
 
   def time
-    "#{@hour_part}:#{@minute_part}"
+    "#{@hour_part}:#{@minute_part.to_s.rjust(2, "0")}"
   end
   
   def time_today
