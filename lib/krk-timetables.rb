@@ -1,5 +1,5 @@
 require "krk-timetables/version"
-require "stop"
+require "krk-timetables_stop"
 require "nokogiri"
 require "open-uri"
 
