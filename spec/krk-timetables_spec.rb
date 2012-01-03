@@ -17,8 +17,8 @@ describe KrkTimetables do
     end
 
     it "should contain stops" do
-      @stops.first.should be_a(Stop)
-      @stops.last.should be_a(Stop)
+      @stops.first.should be_a(KrkTimetables::Stop)
+      @stops.last.should be_a(KrkTimetables::Stop)
     end
 
     it "should contain Cracovia and Teatr Bagatela stops" do

@@ -1,4 +1,4 @@
-class Stop
+class KrkTimetables::Stop
   
   attr_reader :name
 
