@@ -4,6 +4,7 @@ require "open-uri"
 require "krk-timetables/version"
 require "krk-timetables_stop"
 require "krk-timetables_line"
+require "krk-timetables_departure"
 
 module KrkTimetables
 

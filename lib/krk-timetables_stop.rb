@@ -21,8 +21,9 @@ class KrkTimetables::Stop
 
       number = line_link_data.first.to_i
       destination = line_link_data.last
+      url = line_link.attributes["href"].value
 
-      @lines << KrkTimetables::Line.new(number, destination)
+      @lines << KrkTimetables::Line.new(number, destination, url)
     end
 
     @lines
