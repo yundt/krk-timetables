@@ -41,4 +41,9 @@ class KrkTimetables::Line
 
     @departures
   end
+
+  def type
+    number < 100 ? "tram" : "bus"
+  end
+
 end

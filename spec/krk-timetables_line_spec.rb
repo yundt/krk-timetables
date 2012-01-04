@@ -55,4 +55,12 @@ describe KrkTimetables::Line do
 
   end
 
+  describe "#type" do
+
+    it "should be either bus or tram" do
+      ["tram", "bus"].should include(@line.type)
+    end
+
+  end
+
 end
