@@ -20,7 +20,8 @@ gem 'krk-timetables'
 ## Usage
 
 If you don't use Rails or bundler, be sure to require the gem:  
-```
+
+```ruby
 require 'rubygems'  
 require 'krk-timetables'
 ```  
