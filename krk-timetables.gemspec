@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["mareknowakk@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{A gem parsing Cracow MPK timetables.}
-  s.description = %q{This is a gem parsing Cracow MPK timetables from the mpk.krakow.pl website and returning them in a form of nice Ruby hashes.}
+  s.description = %q{This is a gem parsing Cracow MPK timetables from the mpk.krakow.pl website and returning them in a form of nice Ruby objects.}
 
   s.rubyforge_project = "krk-timetables"
 
