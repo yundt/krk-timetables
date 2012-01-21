@@ -55,6 +55,10 @@ departure.time # => "5:56"
 departure.time_today # => 2012-01-21 05:56:00 +0100
 ```
 
+## Compatibility
+
+The gem has been tested with Ruby 1.9.2 and 1.9.3.
+
 ## TODO
 
 * using vcr gem for faster tests,
