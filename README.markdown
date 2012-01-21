@@ -2,6 +2,8 @@
 
 A gem parsing Cracow MPK timetables from the mpk.krakow.pl website and returning them in a form of nice Ruby objects.
 
+[![Build Status](https://secure.travis-ci.org/yundt/krk-timetables.png)](http://travis-ci.org/yundt/krk-timetables)
+
 ## Installation
 
 To install the gem, use the following command:
