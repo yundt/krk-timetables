@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe KrkTimetables::Departure do
+describe KrkTimetables::Departure, :vcr do
 
   before(:each) do
     @departure = KrkTimetables::Stop.find_by_name("Cracovia").lines.first.departures["work_weekdays"].first

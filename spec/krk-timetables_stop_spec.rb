@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe KrkTimetables::Stop do
+describe KrkTimetables::Stop, :vcr do
 
   describe "#find_by_name" do
 

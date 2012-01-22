@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe KrkTimetables::Line do
+describe KrkTimetables::Line, :vcr do
 
   before(:each) do
     @line = KrkTimetables::Stop.find_by_name("Cracovia").lines.first

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe KrkTimetables do
+describe KrkTimetables, :vcr do
 
   describe "#stops" do
 
