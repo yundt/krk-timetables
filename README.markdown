@@ -59,8 +59,13 @@ departure.time_today # => 2012-01-21 05:56:00 +0100
 
 The gem has been tested with Ruby 1.9.2 and 1.9.3.
 
+## MPK terms of use
+
+Using the krk-timetables gem is just another way of accessing
+information from mpk.krakow.pl, so any MPK terms of use apply here as
+well.
+
 ## TODO
 
-* using vcr gem for faster tests,
 * understanding departures with special symbols (like "9.49A", where "A" is explained below the timetable),
 * getting timetables' validity date ranges.
