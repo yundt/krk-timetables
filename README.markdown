@@ -33,6 +33,7 @@ Now you can get the list of all Cracow stops:
 
 ```ruby
 stops = KrkTimetables.stops  
+stops.size # => 1308
 stops.first.name # => "Agatowa"
 ```
 
